@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">MovieWatcher</string>
+    <string name="menu_movies">Movies</string>
+    <string name="menu_wish_list">Wish List</string>
+    <string name="movie_title">Movie Title</string>
+    <string name="year_example">2000</string>
+    <string name="type_of_genre">Type of Genre</string>
+    <string name="rating_example">0.0</string>
+    <string name="rating_out_of">/10</string>
+    <string name="genre">Genre:</string>
+    <string name="released">Released:</string>
+    <string name="rating">Rating:</string>
+    <string name="nav_open_drawer">Open navigation drawer</string>
+    <string name="nav_close_drawer">Close navigation drawer</string>
+    <string name="type">Type</string>
+    <string name="duration_example">0 min</string>
+    <string name="check_on_imdb_com">Check on imdb.com</string>
+    <string name="duration">Duration:</string>
+    <string name="director">Director:</string>
+    <string name="plot">Plot:</string>
+    <string name="cast">Cast:</string>
+    <string name="created_by_daniel_jursik">Created by: Daniel Jursik</string>
+    <string name="movie_year">Year</string>
+    <string name="search">Search</string>
+    <string name="movie_series">movie/series</string>
+    <string name="toast_wish_list_add"> has been added to the wish list!</string>
+    <string name="toast_total_results_found"> total results found.</string>
+    <string name="clear_wish_list">Clear wish list</string>
+    <string name="dialog_clear_wish_list">Clear wish list</string>
+    <string name="dialog_clear_wish_list_question">Clear the entire list?</string>
+
+    <string-array name="movie_types">
+        <item>all</item>
+        <item>movie</item>
+        <item>series</item>
+    </string-array>
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/movie_item_card_margin_left"
+    android:layout_marginTop="@dimen/movie_item_card_margin_top"
+    android:layout_marginRight="@dimen/movie_item_card_margin_right"
+    android:layout_marginBottom="@dimen/movie_item_card_margin_bottom"
+    app:cardElevation="@dimen/movie_item_card_elevation">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/li_img_movie_image"
+            android:layout_width="120dp"
+            android:layout_height="128dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/kitten_small"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/li_tv_movie_title"
+            style="@style/textMovieCardTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:lines="2"
+            android:text="@string/movie_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/li_img_movie_image"
+            app:layout_constraintTop_toTopOf="@+id/li_img_movie_image" />
+
+        <TextView
+            android:id="@+id/li_tv_movie_year"
+            style="@style/textMovieCardOther"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="@string/year_example"
+            app:layout_constraintStart_toEndOf="@+id/textView8"
+            app:layout_constraintTop_toTopOf="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/li_tv_genre"
+            style="@style/textMovieCardOther"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:text="@string/type_of_genre"
+            app:layout_constraintStart_toStartOf="@+id/li_tv_movie_title"
+            app:layout_constraintTop_toBottomOf="@+id/li_tv_movie_title" />
+
+        <TextView
+            android:id="@+id/textView8"
+            style="@style/textMovieCardOther"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/released"
+            app:layout_constraintStart_toStartOf="@+id/li_tv_genre"
+            app:layout_constraintTop_toBottomOf="@+id/li_tv_movie_type" />
+
+        <TextView
+            android:id="@+id/li_tv_movie_type"
+            style="@style/textMovieCardOther"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/type"
+            app:layout_constraintStart_toStartOf="@+id/li_tv_genre"
+            app:layout_constraintTop_toBottomOf="@+id/li_tv_genre" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

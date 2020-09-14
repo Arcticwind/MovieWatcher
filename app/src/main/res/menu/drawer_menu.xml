@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_drawer_main"
+        android:title="Main Menu"
+        android:icon="@drawable/ic_main_menu"/>
+
+    <item
+        android:id="@+id/menu_drawer_movie_list"
+        android:title="Movies"
+        android:icon="@drawable/ic_movie_list"/>
+
+    <item
+        android:id="@+id/menu_drawer_movie_wish_list"
+        android:title="Wish List"
+        android:icon="@drawable/ic_wish_list"/>
+
+</menu>
