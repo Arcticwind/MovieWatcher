@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginLeft="@dimen/movie_item_card_margin_left"
+    android:layout_marginStart="@dimen/movie_item_card_margin_left"
     android:layout_marginTop="@dimen/movie_item_card_margin_top"
-    android:layout_marginRight="@dimen/movie_item_card_margin_right"
+    android:layout_marginEnd="@dimen/movie_item_card_margin_right"
     android:layout_marginBottom="@dimen/movie_item_card_margin_bottom"
     app:cardElevation="@dimen/movie_item_card_elevation">
 
@@ -23,6 +22,7 @@
             android:layout_marginBottom="16dp"
             android:scaleType="fitXY"
             android:src="@drawable/kitten_small"
+            android:contentDescription="@string/movie_title"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -55,7 +55,7 @@
             style="@style/textMovieCardOther"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="8dp"
             android:ellipsize="end"
             android:text="@string/type_of_genre"
             app:layout_constraintStart_toStartOf="@+id/li_tv_movie_title"
@@ -76,9 +76,9 @@
             style="@style/textMovieCardOther"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
+            android:layout_marginStart="4dp"
             android:text="@string/type"
-            app:layout_constraintStart_toStartOf="@+id/li_tv_genre"
-            app:layout_constraintTop_toBottomOf="@+id/li_tv_genre" />
+            app:layout_constraintStart_toEndOf="@+id/li_tv_genre"
+            app:layout_constraintTop_toTopOf="@+id/li_tv_genre" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

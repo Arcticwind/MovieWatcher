@@ -4,7 +4,7 @@
     <string name="menu_wish_list">Wish List</string>
     <string name="movie_title">Movie Title</string>
     <string name="year_example">2000</string>
-    <string name="type_of_genre">Type of Genre</string>
+    <string name="type_of_genre">Type:</string>
     <string name="rating_example">0.0</string>
     <string name="rating_out_of">/10</string>
     <string name="genre">Genre:</string>
