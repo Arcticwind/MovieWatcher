@@ -80,6 +80,6 @@
             android:text="@string/type"
             app:layout_constraintStart_toEndOf="@+id/li_tv_genre"
             app:layout_constraintTop_toTopOf="@+id/li_tv_genre" />
-        
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>
